@@ -8,11 +8,11 @@
  */
 void swap(int *a, int *b)
 {
-    int temp;
+	int temp;
 
-    temp = *a;
-    *a = *b;
-    *b = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /**
@@ -24,24 +24,24 @@ void swap(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-    size_t i, j, flag;
+	size_t i, j, flag;
 
-    if (size >= 2)
-    {
-        for (i = 0; i < size - 1; i++)
-        {
-            flag = 0;
-            for (j = 0; j < size - i - 1; j++)
-            {
-                if (array[j] > array[j + 1])
-                {
-                    swap(&array[j], &array[j + 1]);
-                    print_array(array, size);
-                    flag = 1;
-                }
-            }
-            if (flag == 0)
-                break;
-        }
-    }
+	if (size >= 2)
+	{
+		for (i = 0; i < size - 1; i++)
+		{
+			flag = 0;
+			for (j = 0; j < size - i - 1; j++)
+			{
+				if (array[j] > array[j + 1])
+				{
+					swap(&array[j], &array[j + 1]);
+					print_array(array, size);
+					flag = 1;
+				}
+			}
+			if (flag == 0)
+				break;
+		}
+	}
 }
