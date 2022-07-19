@@ -41,4 +41,5 @@ void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
 void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 
 void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
 #endif /* _SORT_H_ */
