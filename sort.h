@@ -6,6 +6,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+/* Comparison direction macros for bitonic sort */
+#define UP 0
+#define DOWN 1
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -42,4 +46,8 @@ void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+				   char flow);
+void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 #endif /* _SORT_H_ */
